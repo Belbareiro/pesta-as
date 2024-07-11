@@ -1,0 +1,48 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs-header {
+  display: flex;
+  border-bottom: 1px solid rgb(204, 200, 200);
+}
+
+.tab-header {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-header.active {
+  background-color: #000000;
+  font-weight: bold;
+  color: white;
+}
+
+.tabs-content {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid rgb(204, 200, 200);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
